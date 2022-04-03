@@ -1,0 +1,381 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: green;
+  color: white;
+  
+  padding: none;
+  ;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* App Header Style (title, navbar, links) */
+.header {
+  position: relative;
+  z-index: 1;
+  border: 10px solid white;
+  border-radius: 25px;
+  margin-bottom: -20px;
+}
+
+#app-title {
+  font-size: 60px;
+  color: white;
+  margin-left: 20px;
+  text-shadow: 5px 5px 5px black;
+ 
+}
+.navbar {
+  background-color: rgb(37, 187, 37);
+  border-style: solid none none;
+  border-width: 10px;
+  border-color: white;
+  text-align: right;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom: auto;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.navbar a {
+  margin: 5px 10px;
+  text-align: center;
+  padding: 1px 50px;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+.navbar a:link, a:visited {
+  background-color: rgb(60, 236, 60);
+  text-shadow: 1px 1px 4px black;
+}
+
+.navbar a:hover, a:active {
+  background-color: green;
+}
+
+
+/* Goal Container */
+
+#goal-container-greeting {
+  margin: auto;
+  padding: 25px 50px;
+  background-color: grey;
+  opacity: 1;
+  text-shadow: 3px 3px 5px black;
+  border-bottom: 5px outset white ;
+}
+
+.goals-container {
+  border-style: none solid solid solid;
+  border-color: white;
+  border-width: 10px;
+}
+
+/* Goal Display  */
+
+.goal {
+  border-bottom: 5px double white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+.goal-title {
+  
+  padding: 10px;
+  margin: 5px;
+}
+
+.goal h2 {
+
+  display: inline-block;
+  font-size: 36px;
+  text-shadow: 3px 3px 5px black;
+  margin: 10px;
+  height: 50px;
+  width: 60vw;
+}
+
+.progress-bar {
+  float: right;
+  margin: 10px;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  position: relative;
+ 
+}
+
+.progress-bar-outer {
+  width: 25vw;
+  background: #df0808;
+  position: relative;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: none;
+}
+
+.progress-bar-inner {
+  background: rgb(40, 140, 206);
+  height: 20px;
+  border-radius: 7px;
+  z-index: -1;
+
+}
+
+.progress-bar span {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 0px 2px black;
+  font-size: 20px;
+}
+
+
+.goal-details {
+  margin: 5px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255, .3);
+  border: 2px dashed white;
+}
+
+.goal-delete-button {
+  float: right;
+  margin-right: 10px;
+  height: 60px;
+  width: 60px;
+  background-color: #df0808;
+  border-style: inset;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 10px;
+  color: white;
+  font-size: 35px;
+  text-shadow: 2px 2px 5px black;
+}
+
+
+.goal h4 {
+  font-size: 22px;
+  text-shadow: 1px 1px 3px black;
+  margin: auto;
+  display: inline-block;
+}
+
+.goal p {
+  display: block;
+  margin: 5px;
+  width: 60vw;
+
+}
+
+.task-display-button {
+  margin: 10px;
+  background-color: white;
+  height: 32px;
+  width:  180px;
+  font-size: 20px;
+  border-radius: 15px;
+
+}
+
+/* Task Display */
+
+.tasks-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.tasks-container h3 {
+  text-align: center;
+  font-size: 22px;
+  text-shadow: 3px 3px 5px black;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.task {
+  display: inline-block;
+  width: stretch;
+  padding: 10px;
+  text-shadow: 1px 1px 2px black;
+  font-size: larger;
+  border-bottom: 2px dotted white; 
+}
+
+.task-completed-box:checked, .task-completed-box {
+  float: right;
+  margin: 10px 30px;
+  height: 60px;
+  width: 60px;
+  border-style: inset;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.task-delete-button {
+  float: right;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: #df0808;
+  border-style: inset;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 10px;
+  color: white;
+  padding: auto;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px black;
+}
+
+
+/* Task Form */
+
+.task-form {
+  padding: 15px;
+  font-size: 20px;
+}
+
+
+.add-task-button {
+  float: right;
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  border-style: inset;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 10px;
+  color: white;
+  padding: auto;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.task-description, .task-notes {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px inset white;
+  border-radius: 15px;
+  width: 50vw;
+  margin: 10px ;
+  font-size: 16px;
+}
+
+.task-description {
+  height: 20px;
+}
+
+.task-notes {
+  height: 50px;
+}
+
+/* Goal Form */
+
+.goal-form h2 {
+  font-size: 34px;
+}
+
+.goal-form {
+  padding: 15px;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  vertical-align: auto;
+
+}
+
+.goal-form label {
+  margin: auto;
+  display: block;
+}
+
+.goal-description, .goal-name {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px inset white;
+  border-radius: 15px;
+  width: 50vw;
+  margin: 10px ;
+}
+.goal-name {
+  height: 34px;
+  font-size: 24px;
+  text-align: center;
+}
+.goal-description {
+  font-size: 20px;
+  text-align: start;
+  
+}
+
+.add-goal-button {
+  float: right;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  border-style: inset;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 70px;
+  text-shadow: 2px 2px 5px black;
+  margin: 25px;
+}
+
+
+/* user profile */
+
+.profile-page, .sign-up-form, .login-form {
+  text-align: center;
+  font-size: 30px;
+  
+  padding: 15px;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 10px solid white;
+  border-radius: 15px;
+}
+
+.logout-button, .login-button, .sign-up-button {
+  margin: 10px;
+  background-color: white;
+  height: 32px;
+  width:  180px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+
+.login-form label, .sign-up-form label {
+  display: block;
+}
+
+.login-form input, .sign-up-form input {
+  font-size: 24px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px inset white;
+  border-radius: 15px;
+  width: 50vw;
+  margin: 10px ;
+  text-align: center;
+
+}
