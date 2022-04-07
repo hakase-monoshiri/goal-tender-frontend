@@ -14,10 +14,16 @@ export default function login(userData) {
             })
             .then((r) => r.json())
             .then((data) => {
+                if (data.error) {
+                    console.log(data);
+                    alert(data.error)
+                }
+                else {
                 localStorage.setItem("jwt", data.jwt);
                 console.log(data);
                 // save the user somewhere (in state!) to log the user in
                 dispatch( {type: "LOG_IN_USER", user: data.user } );
+                }
             });
 
 
