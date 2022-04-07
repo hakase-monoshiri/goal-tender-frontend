@@ -19,10 +19,11 @@ export default function addGoal(goal) {
             .then((data) => {
                 console.log(data);
                 if (data.error) {
-                    dispatch( {type: "error", error: data} )
+                    console.log(data);
+                    alert(data.error)
                 }
                 else {
-                dispatch( {type: "ADD_GOAL", goal: data } );
+                    dispatch( {type: "ADD_GOAL", goal: data } );
                 }
             });
 

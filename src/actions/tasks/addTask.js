@@ -20,8 +20,13 @@ export default function addTask(task) {
             .then((r) => r.json())
             .then((data) => {
                 console.log(data);
-               
-                dispatch( {type: "ADD_TASK", task: data } );
+                if (data.error) {
+                    console.log(data);
+                    alert(data.error)
+                }
+                else {
+                    dispatch( {type: "ADD_TASK", task: data } );
+                }
             })
             .then(dispatch(fetchGoals())
             );

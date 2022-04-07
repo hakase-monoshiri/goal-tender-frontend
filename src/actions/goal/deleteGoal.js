@@ -19,8 +19,13 @@ export default function deleteGoal(goalId) {
             .then((r) => r.json())
             .then((data) => {
                 console.log(data);
-               
+                if (data.error) {
+                    console.log(data);
+                    alert(data.error)
+                }
+                else {
                 dispatch( {type: "DELETE_GOAL", goal: data.id } );
+                }
             });
 
 
