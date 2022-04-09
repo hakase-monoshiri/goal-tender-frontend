@@ -33,7 +33,7 @@ export default class TaskForm extends Component {
         <h4>Add a new task:</h4>
 
         <br/>
-        <button className='add-task-button' type='submit' > + </button>
+       
     
         <label htmlFor='description'> What's the task: </label>
         <input type="text" className='task-description' name="description" onChange={this.handleInput} value={this.state.description}></input>
@@ -45,7 +45,7 @@ export default class TaskForm extends Component {
 
         <br/>
 
-        
+        <button className='add-task-button' type='submit' > + </button>
 
       </form>
     )
