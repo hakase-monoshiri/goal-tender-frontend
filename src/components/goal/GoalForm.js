@@ -31,7 +31,7 @@ export default class GoalForm extends Component {
         <h2>Add New Goal:</h2>
 
         
-        <button type='submit' className='add-goal-button' >+</button>
+        
 
 
         <label htmlFor='name'> What's Your Goal? </label>
@@ -42,7 +42,11 @@ export default class GoalForm extends Component {
         <label htmlFor='description'> Give it a short description: </label>
         <textarea rows='3' className="goal-description" name="description" onChange={this.handleInput} value={this.state.description}></textarea>
 
+        <button type='submit' className='add-goal-button' >+</button>
+
         <br/>
+
+        
 
       </form>
     )
