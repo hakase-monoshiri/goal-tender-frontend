@@ -111,8 +111,7 @@ code {
 }
 
 .progress-bar {
-  float: right;
-  margin: 10px;
+  margin: auto;
   height: auto;
   width: auto;
   padding: 10px;
@@ -127,6 +126,7 @@ code {
   border: 3px solid white;
   border-radius: 10px;
   padding: none;
+  margin: auto;
 }
 
 .progress-bar-inner {
