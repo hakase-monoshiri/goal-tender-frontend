@@ -39,13 +39,13 @@ code {
   border-style: solid none none;
   border-width: 10px;
   border-color: white;
-  text-align: right;
   font-size: 24px;
   font-weight: bold;
-  padding: 15px;
+  padding: 5px 10px;
   margin-bottom: auto;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  overflow: auto;
 }
 
 .navbar a {
@@ -56,6 +56,7 @@ code {
   border-radius: 10px;
   color: white;
   text-decoration: none;
+  float: right;
 }
 .navbar a:link, a:visited {
   background-color: rgb(60, 236, 60);
@@ -226,7 +227,7 @@ code {
   border-width: 5px;
   border-color: white;
   border-radius: 10px;
-  background-color: green;
+  background-color: gree n;
 }
 
 .task-delete-button {
