@@ -1,7 +1,8 @@
 :root {
   --main-background-color: rgb(85, 163, 85);
   --border-color: white;
-  --accent-color: rgb(0, 119, 69); 
+  --accent-color: rgb(0, 119, 69);
+  --button-main-color: rgb(219, 255, 219);
 
 }
 
@@ -193,7 +194,7 @@ code {
 
 .task-display-button {
   margin: 10px;
-  background-color: white;
+  background-color: var(--button-main-color);
   height: 32px;
   width:  180px;
   font-size: 20px;
@@ -234,7 +235,7 @@ code {
   border-width: 5px;
   border-color: var(--border-color);
   border-radius: 10px;
-  background-color: gree n;
+  background-color: var(--button-main-color);
 }
 
 .task-delete-button {
@@ -267,7 +268,7 @@ code {
   float: right;
   height: 50px;
   width: 50px;
-  background-color: var(--main-background-color);
+  background-color: var(--button-main-color);
   border-style: inset;
   border-width: 5px;
   border-color: var(--border-color);
@@ -336,7 +337,7 @@ code {
   float: right;
   height: 100px;
   width: 100px;
-  background-color: green;
+  background-color: var(--button-main-color);
   border-style: inset;
   border-width: 5px;
   border-color: var(--border-color);
@@ -365,7 +366,7 @@ code {
 
 .logout-button, .login-button, .sign-up-button {
   margin: 10px;
-  background-color: white;
+  background-color: var(--button-main-color);
   height: 32px;
   width:  180px;
   font-size: 20px;
