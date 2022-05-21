@@ -1,3 +1,8 @@
+:root {
+  --main-background-color: rgb(85, 163, 85);
+
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: green;
+  background-color: var(--main-background-color);
   color: white;
   
   padding: none;
@@ -260,7 +265,7 @@ code {
   float: right;
   height: 50px;
   width: 50px;
-  background-color: green;
+  background-color: var(--main-background-color);
   border-style: inset;
   border-width: 5px;
   border-color: white;
