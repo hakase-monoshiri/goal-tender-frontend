@@ -1,5 +1,6 @@
 :root {
   --main-background-color: rgb(85, 163, 85);
+  --border-color: white;
 
 }
 
@@ -27,7 +28,7 @@ code {
 .header {
   position: relative;
   z-index: 1;
-  border: 10px solid white;
+  border: 10px solid var(--border-color);
   border-radius: 25px;
   margin-bottom: -20px;
 }
@@ -43,7 +44,7 @@ code {
   background-color: rgb(37, 187, 37);
   border-style: solid none none;
   border-width: 10px;
-  border-color: white;
+  border-color: var(--border-color);
   font-size: 24px;
   font-weight: bold;
   padding: 5px 10px;
@@ -57,7 +58,7 @@ code {
   margin: 5px 10px;
   text-align: center;
   padding: 1px 50px;
-  border: 3px solid white;
+  border: 3px solid var(--border-color);
   border-radius: 10px;
   color: white;
   text-decoration: none;
@@ -81,19 +82,19 @@ code {
   background-color: grey;
   opacity: 1;
   text-shadow: 3px 3px 5px black;
-  border-bottom: 5px outset white ;
+  border-bottom: 5px outset var(--border-color) ;
 }
 
 .goals-container {
   border-style: none solid solid solid;
-  border-color: white;
+  border-color: var(--border-color);
   border-width: 10px;
 }
 
 /* Goal Display  */
 
 .goal {
-  border-bottom: 5px double white;
+  border-bottom: 5px double var(--border-color);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -128,7 +129,7 @@ code {
   width: 65vw;
   background: #df0808;
   position: relative;
-  border: 3px solid white;
+  border: 3px solid var(--border-color);
   border-radius: 10px;
   padding: none;
   margin: auto;
@@ -156,7 +157,7 @@ code {
   margin: 5px;
   padding: 10px;
   background-color: rgb(255, 255, 255, .3);
-  border: 2px dashed white;
+  border: 2px dashed var(--border-color);
 }
 
 .goal-delete-button {
@@ -167,7 +168,7 @@ code {
   background-color: #df0808;
   border-style: inset;
   border-width: 5px;
-  border-color: white;
+  border-color: var(--border-color);
   border-radius: 10px;
   color: white;
   font-size: 35px;
@@ -220,7 +221,7 @@ code {
   padding: 10px;
   text-shadow: 1px 1px 2px black;
   font-size: larger;
-  border-bottom: 2px dotted white; 
+  border-bottom: 2px dotted var(--border-color); 
 }
 
 .task-completed-box:checked, .task-completed-box {
@@ -230,7 +231,7 @@ code {
   width: 60px;
   border-style: inset;
   border-width: 5px;
-  border-color: white;
+  border-color: var(--border-color);
   border-radius: 10px;
   background-color: gree n;
 }
@@ -243,7 +244,7 @@ code {
   background-color: #df0808;
   border-style: inset;
   border-width: 5px;
-  border-color: white;
+  border-color: var(--border-color);
   border-radius: 10px;
   color: white;
   padding: auto;
@@ -268,7 +269,7 @@ code {
   background-color: var(--main-background-color);
   border-style: inset;
   border-width: 5px;
-  border-color: white;
+  border-color: var(--border-color);
   border-radius: 10px;
   color: white;
   padding: auto;
@@ -314,7 +315,7 @@ code {
 
 .goal-description, .goal-name {
   background-color: rgba(255, 255, 255, 0.9);
-  border: 2px inset white;
+  border: 2px inset var(--border-color);
   border-radius: 15px;
   width: 70vw;
   margin: 10px ;
@@ -337,7 +338,7 @@ code {
   background-color: green;
   border-style: inset;
   border-width: 5px;
-  border-color: white;
+  border-color: var(--border-color);
   border-radius: 10px;
   color: white;
   padding: 10px;
@@ -357,7 +358,7 @@ code {
   padding: 15px;
   font-size: 30px;
   background-color: rgba(0, 0, 0, 0.7);
-  border-bottom: 10px solid white;
+  border-bottom: 10px solid var(--border-color);
   border-radius: 15px;
 }
 
@@ -379,7 +380,7 @@ code {
   font-size: 24px;
   height: 30px;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 2px inset white;
+  border: 2px inset var(--border-color);
   border-radius: 15px;
   width: 50vw;
   margin: 10px ;
