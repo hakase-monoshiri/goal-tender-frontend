@@ -187,6 +187,9 @@ code {
   text-shadow: 2px 2px 5px black;
 }
 
+.goal-delete-button:hover {
+  animation: var(--default-pulse-animation);
+}
 
 .goal h4 {
   font-size: 22px;
@@ -272,6 +275,10 @@ code {
   padding: auto;
   font-size: 20px;
   text-shadow: 2px 2px 5px black;
+}
+
+.task-delete-button:hover {
+  animation: var(--default-pulse-animation);
 }
 
 
