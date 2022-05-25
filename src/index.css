@@ -1,15 +1,17 @@
 :root {
   --main-background-color: rgb(85, 163, 85);
+  --navbar-color: rgb(14, 92, 4);
   --border-color: white;
   --accent-color: rgb(0, 119, 69);
   --progress-bar-main-color: rgb(0, 217, 255);
   --button-main-color: rgb(219, 255, 219);
+  --default-pulse-animation: grow 500ms ease-in-out 0ms infinite alternate;
 
 }
 
 @keyframes grow {
   from {}
-  to {transform:scale(1.1)}
+  to {transform:scale(1.05)}
 }
 
 
@@ -50,7 +52,7 @@ code {
  
 }
 .navbar {
-  background-color: var(--accent-color);
+  background-color: var(--navbar-color);
   border-style: solid none none;
   border-width: 10px;
   border-color: var(--border-color);
@@ -79,7 +81,8 @@ code {
 }
 
 .navbar a:hover, a:active {
-  background-color: green;
+  background-color: var(--accent-color);
+  animation: var(--default-pulse-animation)
 }
 
 
@@ -213,10 +216,8 @@ code {
  
   background-color: var(--accent-color);
   color: white;
-  animation-name: grow;
-  animation-duration: 500ms;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  border-color: var(--border-color);
+  animation: var(--default-pulse-animation)
 
 }
 
