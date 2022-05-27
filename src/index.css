@@ -4,7 +4,7 @@
   --border-color: white;
   --accent-color: rgb(0, 119, 69);
   --progress-bar-main-color: rgb(0, 217, 255);
-  --button-main-color: rgb(219, 255, 219);
+  --button-main-color: rgb(68, 170, 65);
   --default-pulse-animation: grow 500ms ease-in-out 0ms infinite alternate;
 
 }
@@ -189,6 +189,7 @@ code {
 
 .goal-delete-button:hover {
   animation: var(--default-pulse-animation);
+  background-color: #a10000;
 }
 
 .goal h4 {
@@ -279,6 +280,7 @@ code {
 
 .task-delete-button:hover {
   animation: var(--default-pulse-animation);
+  background-color: #a10000;;
 }
 
 
@@ -304,6 +306,10 @@ code {
   padding: auto;
   font-size: 40px;
   text-shadow: 2px 2px 5px black;
+}
+.add-task-button:hover {
+  background-color: var(--accent-color);
+  animation: var(--default-pulse-animation);
 }
 
 .task-description, .task-notes {
@@ -375,6 +381,11 @@ code {
   font-size: 70px;
   text-shadow: 2px 2px 5px black;
   margin: 5px;
+}
+
+.add-goal-button:hover {
+  background-color: var(--accent-color);
+  animation: var(--default-pulse-animation);
 }
 
 
