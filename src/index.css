@@ -411,6 +411,12 @@ code {
   border-radius: 15px;
 }
 
+.logout-button:hover, .login-button:hover, .sign-up-button:hover {
+  animation: var(--default-pulse-animation);
+  background-color: var(var(--accent-color));
+  color: var(--border-color);
+  border-color: var(--border-color);
+}
 
 .login-form label, .sign-up-form label {
   display: block;
